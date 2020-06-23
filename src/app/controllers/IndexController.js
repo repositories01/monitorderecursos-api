@@ -1,3 +1,5 @@
+const crawler = require('../../services/crawler/crawler')
+
 class IndexController {
     
     index(){
