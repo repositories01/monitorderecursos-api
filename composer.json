@@ -1,0 +1,26 @@
+{
+    "name": "thiag/mvc",
+    "description": "mvc",
+    "type": "project",
+    "version":"1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "thiagomedina",
+            "email": "thiagomedina.tmd@mail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "require": {
+        "slim/slim": "^3.0",
+        "guzzlehttp/guzzle":"^6.3",
+        "sunra/php-simple-html-dom-parser":"^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "config/"
+        }
+    }
+}
