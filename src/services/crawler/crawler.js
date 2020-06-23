@@ -33,6 +33,3 @@ const main = async () => {
 
 
 };
-
-
-main();
