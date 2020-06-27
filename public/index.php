@@ -21,6 +21,10 @@ $crawler = $client->request('GET',$finep);
 
 $crawler->filter('.item > .tema')->each(function ($node){
     $headline = $node->text();
+    $search = 'tecnologia';
+if(preg_match("/{$search}/i", $headline)) {
+    echo;
+}
     echo $headline . "<br/>";
 });
 
