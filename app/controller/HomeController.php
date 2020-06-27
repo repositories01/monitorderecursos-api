@@ -11,9 +11,12 @@ class HomeController
     {
 
         // $this->dados = HomeModel::all();
-
+          
         // $home = include '../app/views/home.php';
         // return $response->getBody()->getContents($home);
+
+       return $response->withJson("ok")
+        ->withHeader('Content-type', 'application/json');
     }
 
     public function salvar(Request $request, Response $response)

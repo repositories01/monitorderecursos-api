@@ -15,7 +15,12 @@
     "require": {
         "slim/slim": "^3.0",
         "guzzlehttp/guzzle":"^6.3",
-        "sunra/php-simple-html-dom-parser":"^1.5"
+        "fabpot/goutte": "^4.0@dev"
+
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public public/index.php",
+        "test": "phpunit"
     },
     "autoload": {
         "psr-4": {

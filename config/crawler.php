@@ -15,9 +15,9 @@ $finep = 'http://www.finep.gov.br/chamadas-publicas?situacao=aberta';
 $htmlFinep = $client->request("GET", $finep)->getBody();
 $domFinep = HtmlDomParser::str_get_html($htmlFinep);
 
-foreach($domFinep->find('div[class="item"]') as $article) {
-    $item['title']     = $article->find ('div.tema span', 0)->plaintext;
-    $articles[] = $item;
-}
+// foreach($domFinep->find('div[class="item"]') as $article) {
+//     $item['title']     = $article->find ('div.tema span', 0)->plaintext;
+//     $articles[] = $item;
+// }
 
-print_r($articles);
+echo "teste";
